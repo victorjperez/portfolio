@@ -1,10 +1,10 @@
-import imageUrlBuilder from '@sanity/image-url';
-import sanityClient from '@sanity/client';
+import imageUrlBuilder from "@sanity/image-url";
+import sanityClient from "@sanity/client";
 
 export const client = sanityClient({
-  projectId: 'dyub8zvy',
-  dataset: 'production',
-  useCdn: true,
+  projectId: "qjr2zbvq",
+  dataset: "production",
+  useCdn: true
 });
 
 const builder = imageUrlBuilder(client);
