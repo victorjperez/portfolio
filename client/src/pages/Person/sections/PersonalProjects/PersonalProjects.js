@@ -19,7 +19,7 @@ export default class PersonalProjects extends React.Component {
         <NoPageBreak>
           <Title>
             {{
-              english: 'Personal projects',
+              english: 'Projects & Publications',
               norwegian: 'Personlige prosjekter',
             }[preferredLanguage]}
           </Title>

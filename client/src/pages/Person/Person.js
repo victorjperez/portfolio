@@ -49,7 +49,6 @@ class Person extends Component {
             <Education person={person} />
             <Jobs person={person} />
             <PersonalProjects person={person} />
-            <VolunteerWork person={person} />
           </Page>
         );
     }

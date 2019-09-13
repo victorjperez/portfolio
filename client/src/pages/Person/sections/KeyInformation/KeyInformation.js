@@ -66,26 +66,6 @@ export default class KeyInformation extends React.Component {
             </a>
           </Entry>
         )}
-        {info.instagramHandle && (
-          <Entry>
-            <Icon className="fab fa-instagram" />
-            &nbsp;
-            <a
-              href={`https://www.instagram.com/${info.instagramHandle.replace(
-                "@",
-                ""
-              )}/`}
-            >
-              {info.instagramHandle}
-            </a>
-          </Entry>
-        )}
-        {info.birthYear && (
-          <Entry>
-            <Icon className="fas fa-birthday-cake" />
-            &nbsp;{info.birthYear}
-          </Entry>
-        )}
       </Section>
     );
   }

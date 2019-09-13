@@ -55,7 +55,7 @@ export default class PersonalProject extends React.Component {
             </tr>
           }
 
-          { (project.role && project.role.title && project.role.description) &&
+          {/* { (project.role && project.role.title && project.role.description) &&
             <tr>
               <td>
                 {{
@@ -69,7 +69,7 @@ export default class PersonalProject extends React.Component {
                 <div dangerouslySetInnerHTML={{__html: project.role.description.split('\n').join('<br />')}} />
               </td>
             </tr>
-          }
+          } */}
           { (project.technologies && project.technologies.length !== 0) &&
             <tr>
               <td>
