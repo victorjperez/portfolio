@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Table, Nowrap, SmallBr } from 'components/Table';
+import { Table, Nowrap } from 'components/Table';
 import TechTag from 'components/TechTag';
 import { LinkWIcon, PrintLink } from 'components/Link';
 

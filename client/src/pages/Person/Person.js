@@ -5,7 +5,6 @@ import Expertise from "./sections/Expertise";
 import Jobs from "./sections/Jobs";
 import PersonalProjects from "./sections/PersonalProjects";
 import Education from "./sections/Education";
-import VolunteerWork from "./sections/VolunteerWork";
 
 import "./colors.css";
 import { Page } from "./Person.style.js";
@@ -51,6 +50,7 @@ class Person extends Component {
             <PersonalProjects person={person} />
           </Page>
         );
+        default:
     }
   }
 }
