@@ -6,7 +6,7 @@ const A = styled.a`
   text-decoration: none;
 
   @media print {
-    display: none;
+    display: none !important;
   }
 `;
 

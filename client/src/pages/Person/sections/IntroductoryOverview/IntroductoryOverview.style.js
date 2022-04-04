@@ -13,6 +13,7 @@ export const Section = styled.div`
     padding-top: 2.5rem;
   }
   @media print {
+    padding-top: 0;
     flex-direction: row;
     background-color: unset;
   }
@@ -56,6 +57,8 @@ export const ProfileImg = styled.img`
     margin: 2rem 0;
   }
   @media print {
+    height: 140px;
+    width: 140px;
     margin: 2rem 0;
     border: none;
   }

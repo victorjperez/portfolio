@@ -16,6 +16,7 @@ export const Section = styled.div`
     flex-direction: column;
   }
   @media print {
+    padding-top: 0;
     flex-direction: row;
     a {
       text-decoration: none;

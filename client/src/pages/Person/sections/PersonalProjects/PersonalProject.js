@@ -24,6 +24,11 @@ export default class PersonalProject extends React.Component {
             <td>
               <h4>
                 {project.title}
+                {project.readableUrl &&
+                <div>
+                <PrintLink icon="link"> - {project.readableUrl}</PrintLink>
+                </div>
+              } 
                 {project.url &&
                   <Fragment>
                     &nbsp;<LinkWIcon icon="link" url={project.url} />
@@ -35,11 +40,7 @@ export default class PersonalProject extends React.Component {
                   </Fragment>
                 }
               </h4>
-              {project.readableUrl &&
-                <div>
-                  <PrintLink icon="link">{project.readableUrl}</PrintLink>
-                </div>
-              }
+              
             </td>
           </tr>
 
@@ -54,22 +55,6 @@ export default class PersonalProject extends React.Component {
               <td dangerouslySetInnerHTML={{__html: project.description.split('\n').join('<br />')}} />
             </tr>
           }
-
-          {/* { (project.role && project.role.title && project.role.description) &&
-            <tr>
-              <td>
-                {{
-                  english: 'Role',
-                  norwegian: 'Rolle',
-                }[preferredLanguage]}
-              </td>
-              <td>
-                {project.role.title}
-                <SmallBr />
-                <div dangerouslySetInnerHTML={{__html: project.role.description.split('\n').join('<br />')}} />
-              </td>
-            </tr>
-          } */}
           { (project.technologies && project.technologies.length !== 0) &&
             <tr>
               <td>

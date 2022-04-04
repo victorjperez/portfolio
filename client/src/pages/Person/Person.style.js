@@ -10,6 +10,7 @@ const Background = styled.div`
     padding: 3.3rem 10rem;
   }
   @media print {
+    padding: 0;
     background-color: unset;
     min-height: unset;
   }
@@ -31,6 +32,7 @@ const Paper = styled.div`
   }
 
   @media print {
+    padding-bottom: 0;
     background-color: unset;
   }
 `;

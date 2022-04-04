@@ -4,6 +4,12 @@ const big = 660;
 const small = big - 1;
 
 export const Table = styled.table`
+  td {
+    h4 {
+      display: flex;
+      align-items: center;
+    }
+  }
   td:nth-child(1) {
     color: var(--main-color);
   }
@@ -12,7 +18,6 @@ export const Table = styled.table`
       color: var(--black);
     }
   }
-
   @media (max-width: ${small}px) {
     tr, td {
       display: block;
@@ -67,10 +72,10 @@ export const Table = styled.table`
     }
     td {
       display: table-cell;
-      padding: .8rem 0;
+      padding: .4rem 0;
     }
     td:nth-child(1) {
-      padding: .8rem 0;
+      padding: .4rem 0;
     }
 
     padding-top: .8rem;
