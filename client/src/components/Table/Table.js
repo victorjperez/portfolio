@@ -13,6 +13,13 @@ export const Table = styled.table`
   td:nth-child(1) {
     color: var(--main-color);
   }
+  .multiple-dates {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 26px;
+    gap: 2px;
+  }
   @media print {
     td:nth-child(1) {
       color: var(--black);
@@ -62,7 +69,6 @@ export const Table = styled.table`
   h4, h5 {
     margin: 0;
   }
-
   @media print {
     page-break-inside: avoid;
 
@@ -73,6 +79,9 @@ export const Table = styled.table`
     td {
       display: table-cell;
       padding: .4rem 0;
+    }
+    .multiple-dates {
+      margin-top: 12px;
     }
     td:nth-child(1) {
       padding: .4rem 0;

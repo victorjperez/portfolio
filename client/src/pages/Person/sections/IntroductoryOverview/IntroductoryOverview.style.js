@@ -78,14 +78,14 @@ export const Description = styled.div`
 
 export const Name = styled.h1`
   margin: 0;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: .05rem;
 `;
 
 export const Title = styled.h2`
   margin: .3rem 0 2rem;
   border-bottom: .1rem solid var(--white);
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: .05rem;
 
   @media print {

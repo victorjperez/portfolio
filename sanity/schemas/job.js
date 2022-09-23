@@ -1,42 +1,57 @@
 export default {
-  name: 'job',
-  title: 'Job',
-  type: 'document',
+  name: "job",
+  title: "Job",
+  type: "document",
   fields: [
     {
-      name: 'company',
-      title: 'Company',
-      type: 'reference',
-      to: [{type: 'company'}],
+      name: "company",
+      title: "Company",
+      type: "reference",
+      to: [{ type: "company" }],
     },
     {
-      name: 'title',
-      title: 'Job title',
-      type: 'localeString',
+      name: "title",
+      title: "Job title",
+      type: "localeString",
     },
     {
-      name: 'start',
-      title: 'Start',
-      type: 'date',
+      name: "start",
+      title: "Start",
+      type: "date",
     },
     {
-      name: 'end',
-      title: 'End',
-      type: 'date',
+      name: "end",
+      title: "End",
+      type: "date",
     },
     {
-      name: 'description',
-      title: 'Description',
-      type: 'localeText',
+      name: "title2",
+      title: "Job title",
+      type: "localeString",
+    },
+    {
+      name: "start2",
+      title: "Start",
+      type: "date",
+    },
+    {
+      name: "end2",
+      title: "End",
+      type: "date",
+    },
+    {
+      name: "description",
+      title: "Description",
+      type: "localeText",
     },
   ],
   preview: {
     select: {
-      jobTitle: 'title.en',
-      companyName:  'company.name',
+      jobTitle: "title.en",
+      companyName: "company.name",
     },
-    prepare: s => ({
-      title: `${s.companyName} — ${s.jobTitle}`
+    prepare: (s) => ({
+      title: `${s.companyName} — ${s.jobTitle}`,
     }),
   },
 };

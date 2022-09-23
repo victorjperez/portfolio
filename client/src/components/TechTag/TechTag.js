@@ -5,7 +5,6 @@ const TechTag = styled.span`
 
   margin: 0 .8rem 1rem 0;
   line-height: 2rem;
-
   font-size: 1.4rem;
   border-radius: .4rem;
 
@@ -22,7 +21,6 @@ const TechTag = styled.span`
   @media print {
     background-color: unset;
     color: var(--black);
-    border: .1rem solid var(--black);
     padding: .2rem .9rem;
   }
 `;

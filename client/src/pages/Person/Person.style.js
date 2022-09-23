@@ -25,6 +25,7 @@ const Paper = styled.div`
   padding-bottom: 2.5rem;
   background-color: var(--white);
   color: var(--black);
+  border: 1px solid black;
 
   min-height: 80vh;
   @media (max-width: 999px) {
@@ -33,6 +34,7 @@ const Paper = styled.div`
 
   @media print {
     padding-bottom: 0;
+    border: none;
     background-color: unset;
   }
 `;

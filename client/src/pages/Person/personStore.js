@@ -20,14 +20,13 @@ const localized = {
 }[preferredLanguage];
 
 function apiCall() {
-  return client.fetch(
-    `*[_type == 'person'] | [0] {
+  return client.fetch(`*[_type == 'person'] | [0] {
       name,
       image,
-      ${localized('title')},
-      ${localized('introduction')},
+      ${localized("title")},
+      ${localized("introduction")},
       keyInfo{
-        ${localized('location')},
+        ${localized("location")},
         birthYear,
         emailAddress,
         phoneNumber,
@@ -46,14 +45,17 @@ function apiCall() {
         company->{
           name,
         },
-        ${localized('title')},
+        ${localized("title")},
         start,
         end,
-        ${localized('description')},
+        ${localized("title2")},
+        start2,
+        end2,
+        ${localized("description")},
       },
       professionalProjects[]->{
         _id,
-        ${localized('title')},
+        ${localized("title")},
         company->{
           name
         },
@@ -63,48 +65,47 @@ function apiCall() {
         logo,
         start,
         end,
-        ${localized('description')},
+        ${localized("description")},
         role {
-          ${localized('title')},
-          ${localized('description')},
+          ${localized("title")},
+          ${localized("description")},
         },
         technologies,
       },
       personalProjects[]->{
         _id,
-        ${localized('title')},
+        ${localized("title")},
         readableUrl,
         url,
         githubUrl,
         logo,
         start,
         end,
-        ${localized('description')},
+        ${localized("description")},
         role {
-          ${localized('title')},
-          ${localized('description')},
+          ${localized("title")},
+          ${localized("description")},
         },
         technologies,
       },
       education[]->{
         _id,
-        ${localized('institutionName')},
-        ${localized('degree')},
-        ${localized('description')},
+        ${localized("institutionName")},
+        ${localized("degree")},
+        ${localized("description")},
         start,
         end,
       },
       volunteerWorkPositions[]->{
         _id,
-        ${localized('title')},
+        ${localized("title")},
         organizationName,
-        ${localized('position')},
-        ${localized('description')},
+        ${localized("position")},
+        ${localized("description")},
         start,
         end,
       },
-    }`
-  );
+    }`);
 }
 
 export function fetchPerson() {
