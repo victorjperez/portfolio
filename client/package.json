@@ -8,20 +8,16 @@
     "@sanity/client": "^0.134.2",
     "@sanity/image-url": "^0.134.1",
     "date-fns": "^1.29.0",
-    "gh-pages": "^2.0.1",
-    "pockito": "^0.1.15",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-scripts": "2.0.4",
-    "yarn": "^1.22.18"
+    "gh-pages": "^6.3.0",
+    "react": "^18.x.x",
+    "react-dom": "^18.x.x",
+    "yarn": "^1.22.18",
+    "zustand": "^5.0.8"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,6 +30,8 @@
   ],
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.3.1",
-    "styled-components": "^3.4.9"
+    "@vitejs/plugin-react": "^5.0.4",
+    "styled-components": "^6.1.19",
+    "vite": "^7.1.7"
   }
 }
